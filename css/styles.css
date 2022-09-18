@@ -12,6 +12,10 @@ p {
   font-size: 15px;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
 .attribution a {
   color: hsl(25deg, 97%, 53%);
 }
