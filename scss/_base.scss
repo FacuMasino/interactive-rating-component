@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+// Breakpoints
+$breakpoints: (
+  mobile: 576px,
+  desktop: 1440px,
+);
+
+// Colors
+$primary-base: hsl(25, 97%, 53%);
+$neutral-bright: hsl(217, 12%, 63%);
+$neutral-light: hsl(216, 12%, 54%);
+$neutral-dark: hsl(213, 20%, 18%);
+$neutral-darker: hsl(216, 12%, 8%);
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: $neutral-darker;
+  color: $neutral-bright;
+}
+
+p {
+  font-size: 15px;
+}
+
+.attribution {
+  a {
+    color: $primary-base;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: map-get($breakpoints, "mobile")) {
+    @content;
+  }
+}

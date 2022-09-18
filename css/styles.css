@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(217deg, 12%, 63%);
+}
+
+p {
+  font-size: 15px;
+}
+
+.attribution a {
+  color: hsl(25deg, 97%, 53%);
+}
+.attribution a:hover {
+  color: white;
+}
+
+#rating-state {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(140deg, hsl(213deg, 20%, 18%) 1%, hsl(216deg, 12%, 8%) 120%);
+}
+.card-title {
+  color: White;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-body p {
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 70%;
+    min-width: min-content;
+  }
+}
+
+ul#rates-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0;
+}
+ul#rates-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: hsl(213deg, 20%, 18%);
+  aspect-ratio: 1/1;
+  text-align: center;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+ul#rates-list li:hover {
+  background-color: hsl(216deg, 12%, 54%);
+  color: white;
+}
+ul#rates-list li.selected {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+}
+ul#rates-list li:last-child {
+  margin: 0;
+}
+@media (max-width: 576px) {
+  ul#rates-list li {
+    height: 2.5rem;
+    margin-right: 1rem;
+  }
+}
+
+#thanky-state {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+#thanky-state p {
+  text-align: center;
+}
+
+.star-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  aspect-ratio: 1/1;
+  background-color: hsl(213deg, 20%, 18%);
+}
+
+.pill {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 2rem 0 2rem 0;
+  background-color: hsl(213deg, 20%, 18%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+button {
+  border-radius: 2rem;
+  padding: 1rem 0 1rem 0;
+  line-height: 1rem;
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

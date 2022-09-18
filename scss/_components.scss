@@ -1,0 +1,121 @@
+@use "base" as *;
+
+#rating-state {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(
+    140deg,
+    $neutral-dark 1%,
+    $neutral-darker 120%
+  );
+  &-title {
+    color: White;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    p {
+      line-height: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @include media-mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 70%;
+    min-width: min-content;
+  }
+}
+
+ul#rates-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $neutral-dark;
+    aspect-ratio: 1/1;
+    text-align: center;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $neutral-light;
+      color: white;
+    }
+    &.selected {
+      background-color: $primary-base;
+      color: white;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    @include media-mobile {
+      height: 2.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+#thanky-state {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  p {
+    text-align: center;
+  }
+}
+
+.star-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  aspect-ratio: 1/1;
+  background-color: $neutral-dark;
+}
+
+.pill {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 2rem 0 2rem 0;
+  background-color: $neutral-dark;
+  color: $primary-base;
+}
+
+button {
+  border-radius: 2rem;
+  padding: 1rem 0 1rem 0;
+  line-height: 1rem;
+  background-color: $primary-base;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    color: $primary-base;
+  }
+}

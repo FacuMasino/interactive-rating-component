@@ -1,0 +1,9 @@
+@use "base" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: map-get($breakpoints, "desktop");
+  margin: auto;
+}

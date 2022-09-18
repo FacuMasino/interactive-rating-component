@@ -1,0 +1,24 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass -w scss/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacuMasino/interactive-rating-component.git"
+  },
+  "keywords": [],
+  "author": "Facundo Masino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacuMasino/interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/FacuMasino/interactive-rating-component#readme",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
